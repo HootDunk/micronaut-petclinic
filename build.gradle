@@ -4,7 +4,7 @@ plugins {
 }
 
 version = "0.1"
-group = "data.jdbc.tutorial"
+group = "oci.example.petclinic"
 
 repositories {
     mavenCentral()
@@ -15,11 +15,12 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("data.jdbc.tutorial.*")
+        annotations("oci.example.petclinic.*")
     }
 }
 
 dependencies {
+    implementation 'javax.inject:javax.inject:1'
     annotationProcessor("io.micronaut.data:micronaut-data-processor")
     implementation("io.micronaut.flyway:micronaut-flyway")
     implementation("io.micronaut.data:micronaut-data-jdbc")
@@ -29,17 +30,20 @@ dependencies {
     implementation("io.micronaut:micronaut-runtime")
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("org.postgresql:postgresql")
+
+    testImplementation("org.testcontainers:junit-jupiter")
+    testImplementation("org.testcontainers:postgresql")
+    testImplementation("org.testcontainers:testcontainers")
+
     implementation("io.micronaut:micronaut-validation")
 }
 
-
 application {
-    mainClass.set("data.jdbc.tutorial.Application")
+    mainClass.set("oci.example.petclinic.Application")
 }
+
 java {
     sourceCompatibility = JavaVersion.toVersion("1.8")
     targetCompatibility = JavaVersion.toVersion("1.8")
 }
-
-
 

@@ -1,4 +1,4 @@
-package data.jdbc.tutorial;
+package oci.example.petclinic;
 
 import io.micronaut.runtime.Micronaut;
 
