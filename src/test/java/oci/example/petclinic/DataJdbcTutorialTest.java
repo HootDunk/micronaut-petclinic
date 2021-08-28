@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Assertions;
 import javax.inject.Inject;
 
 @MicronautTest
-class DataJdbcTutorialTest {
+class DataJdbcTutorialTest extends TestContainersSuite {
 
     @Inject
     EmbeddedApplication<?> application;
@@ -16,6 +16,14 @@ class DataJdbcTutorialTest {
     @Test
     void testItWorks() {
         Assertions.assertTrue(application.isRunning());
+    }
+
+    @Test
+    void testTheTestContainer(){
+        getProperties();
+
+        System.out.println(getEmbeddedServer().getURL());
+        System.out.println(getEmbeddedServer().getEnvironment().getActiveNames());
     }
 
 }

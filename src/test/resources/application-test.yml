@@ -1,0 +1,14 @@
+datasources:
+  default:
+    url:  jdbc:tc:postgresql:///
+    driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+
+
+---
+
+flyway:
+  enabled: enabled
+  datasources:
+    default:
+      locations:
+        - "classpath:db/migration"
