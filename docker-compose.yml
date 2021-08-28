@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: library/postgres:latest
+    ports:
+      - "5432:5432"
+    container_name: petclinic-postgres-db
+    environment:
+      - POSTGRES_DB=petclinic
+      - POSTGRES_PASSWORD=petclinic
+      - POSTGRES_USER=petclinic
