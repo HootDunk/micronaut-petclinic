@@ -4,6 +4,6 @@ import oci.example.petclinic.model.Owner;
 
 import java.util.List;
 
-public interface OwnerService {
-    List<Owner> findAllOrderByLastname();
+public interface OwnerServices {
+    List<Owner> findAllOrderByLastName();
 }
