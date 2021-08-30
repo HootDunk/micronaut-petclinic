@@ -38,6 +38,7 @@ public class Vet extends Person {
 //    @XmlElement
     public List<Specialty> getSpecialties() {
         List<Specialty> sortedSpecs = new ArrayList<>(getSpecialtiesInternal());
+        // use query to get specialties sorted by name
         sortedSpecs.sort(Vet.COMPARE_BY_NAME);
         return Collections.unmodifiableList(sortedSpecs);
     }

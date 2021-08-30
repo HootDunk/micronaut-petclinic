@@ -1,7 +1,5 @@
 package oci.example.petclinic.model;
 
-import oci.example.petclinic.model.BaseEntity;
-
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotEmpty;
@@ -35,6 +33,5 @@ public class Person extends BaseEntity {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
 
 }
