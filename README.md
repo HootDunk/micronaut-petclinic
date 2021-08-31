@@ -9,7 +9,3 @@ A clone of the popular Spring Petclinic Rest example made with Micronaut.
 - [Micronaut Guides](https://guides.micronaut.io/index.html)
 ---
 
-## Feature http-client documentation
-
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
-
