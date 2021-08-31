@@ -1,5 +1,5 @@
 ## micronaut-petclinic
-A clone of the popular Spring Petclinic Rest example made with Micronuat. 
+A clone of the popular Spring Petclinic Rest example made with Micronaut. 
 
 ## Micronaut 3.0.0 Documentation
 
