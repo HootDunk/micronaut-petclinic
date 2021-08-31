@@ -35,6 +35,7 @@ public class OwnerControllerTest extends TestContainersSuite implements OwnerFix
 
     @Test
     void testGetAllOwnersOrderByLastName(){
+        Owner owner = saveAnOwner(createOwner("John", "Zzzz"));
         Owner owner1 = saveAnOwner(createOwner("John", "Apple"));
         Owner owner2 = saveAnOwner(createOwner("Vincente", "Luque"));
 
@@ -49,5 +50,6 @@ public class OwnerControllerTest extends TestContainersSuite implements OwnerFix
         response.getBody().get().forEach(o -> System.out.println(o.toString()));
         assertEquals(owner1.getId(), response.getBody().get().get(0).getId());
         assertEquals(owner2.getId(), response.getBody().get().get(1).getId());
+        assertEquals(owner.getId(), response.getBody().get().get(2).getId());
     }
 }

@@ -50,6 +50,7 @@ public class Owner extends Person {
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
+
     @JsonIgnore
     protected Set<Pet> getPetsInternal() {
         if (this.pets == null) {
@@ -104,7 +105,7 @@ public class Owner extends Person {
         return null;
     }
 
-
+    // TODO look into equal hashcode question relating to parent class
 
     @Override
     public String toString() {

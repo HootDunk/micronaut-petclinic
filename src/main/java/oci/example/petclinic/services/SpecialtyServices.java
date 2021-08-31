@@ -1,2 +1,4 @@
-package oci.example.petclinic.services;public interface SpecialtyServices {
+package oci.example.petclinic.services;
+
+public interface SpecialtyServices {
 }

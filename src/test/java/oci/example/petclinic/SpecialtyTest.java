@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class SpecialtyTest extends TestContainersSuite implements SpecialtyFixture {
 
+    // is the seed data being loaded into the testcontainer?
     @Test
     void testSavingASpecialty(){
         Specialty specialty = new Specialty();

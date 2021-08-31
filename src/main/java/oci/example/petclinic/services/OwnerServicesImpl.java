@@ -19,4 +19,7 @@ public class OwnerServicesImpl implements OwnerServices {
     public List<Owner> findAllOrderByLastName() {
         return ownerRepo.findAllOrderByLastName();
     }
+
+    public Owner save(Owner owner) { return ownerRepo.save(owner); }
+
 }
