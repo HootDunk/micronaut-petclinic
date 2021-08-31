@@ -1,11 +1,11 @@
-## micronaut-jdbc-docker
-This is simply the code from the micronaut-jdbc guide with the addition of a docker compose file to create the Postgres database and some configuration to get it working with Flyway. 
+## micronaut-petclinic
+A clone of the popular Spring Petclinic Rest example made with Micronuat. 
 
-## Micronaut 2.5.11 Documentation
+## Micronaut 3.0.0 Documentation
 
-- [User Guide](https://docs.micronaut.io/2.5.11/guide/index.html)
-- [API Reference](https://docs.micronaut.io/2.5.11/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/2.5.11/guide/configurationreference.html)
+- [User Guide](https://docs.micronaut.io/3.0.0/guide/index.html)
+- [API Reference](https://docs.micronaut.io/3.0.0/api/index.html)
+- [Configuration Reference](https://docs.micronaut.io/3.0.0/guide/configurationreference.html)
 - [Micronaut Guides](https://guides.micronaut.io/index.html)
 ---
 
