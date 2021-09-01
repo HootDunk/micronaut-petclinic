@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class OwnerControllerTest extends TestContainersSuite implements OwnerFixture {
     @Inject
-    @Client("/owner")
+    @Client("/api/owners")
     private HttpClient client;
 
     public static Owner createOwner(String firstName, String lastName){

@@ -1,5 +1,6 @@
 package oci.example.petclinic.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
@@ -19,7 +20,8 @@ public class BaseEntity {
     }
 
     @Transient
-    @JsonProperty("isNew")
+//    @JsonProperty("isNew")
+    @JsonIgnore
     public boolean isNew() {
         return this.id == null;
     }
